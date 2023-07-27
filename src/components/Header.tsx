@@ -6,9 +6,11 @@ interface Props {
 
 const Header: React.FC<Props> = ({ title }) => {
     return (
-        <div>
-            <h1>{title}</h1>
-        </div>
+        <header style={{ background: 'lightblue' }}>
+            <h1 style={{ textAlign: 'center', border: 'dotted'}} className="p-2">
+                {title}
+            </h1>
+        </header>
     );
 }
 
